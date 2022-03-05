@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myticket.LaporanPenjualan">
+    <children>
+        <VBox prefHeight="772.0" prefWidth="200.0" style="-fx-background-color: #693d3d;">
+            <children>
+                <Pane prefHeight="150.0" prefWidth="210.0">
+                    <children>
+                        <Text fill="WHITE" layoutX="56.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Ticket.">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                        </Text>
+                    </children></Pane>
+                <JFXButton alignment="CENTER" onAction="#tiket" prefHeight="28.0" prefWidth="232.0" style="-fx-background-color: transparent; -fx-text-fill: #ffffff;" text="Tiket">
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton alignment="CENTER" prefHeight="28.0" prefWidth="306.0" style="-fx-background-color: transparent; -fx-text-fill: #ffffff;" text="Laporan Penjualan">
+                    <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton alignment="CENTER" onAction="#logout" prefHeight="28.0" prefWidth="336.0" style="-fx-background-color: transparent; -fx-text-fill: #ffffff;" text="Keluar">
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </JFXButton>
+            </children>
+        </VBox>
+        <Pane layoutX="216.0" layoutY="14.0" prefHeight="96.0" prefWidth="1136.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Text layoutX="21.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Laporan Penjualan Tiket Kereta Api">
+                    <font>
+                        <Font name="Verdana Bold" size="18.0" />
+                    </font>
+                </Text>
+                <HBox layoutY="49.0" prefHeight="28.0" prefWidth="1136.0">
+                    <children>
+                  <JFXButton onAction="#cetak" prefWidth="150.0" style="-fx-background-color: #693d3d; -fx-text-fill: #ffffff; -fx-background-radius: 5;" text="Cetak Laporan">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                        <TextField fx:id="cari_data" prefWidth="300.0" promptText="Cari Data" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                            <font>
+                                <Font name="Verdana" size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="650.0" />
+                            </HBox.margin>
+                        </TextField>
+                    </children>
+                </HBox>
+            </children>
+        </Pane>
+        <TableView fx:id="tiketTable" layoutX="216.0" layoutY="128.0" prefHeight="600.0" prefWidth="1136.0">
+            <columns>
+            <TableColumn fx:id="nama_penumpang" prefWidth="150.0" text="Nama Penumpang" />
+            <TableColumn fx:id="nomor_telepon" prefWidth="150.0" text="Nomor Telepon" />
+            <TableColumn fx:id="bio" prefWidth="150.0" text="Bio" />
+            <TableColumn fx:id="tipe_identitas" prefWidth="150.0" text="Tipe Identitas" />
+            <TableColumn fx:id="nomor_identitas" prefWidth="150.0" text="Nomor Identitas" />
+            <TableColumn fx:id="tgl_lahir" prefWidth="150.0" text="Tanggal Lahir" />
+            <TableColumn fx:id="alamat" prefWidth="150.0" text="Alamat" />
+            <TableColumn fx:id="kode_kereta" prefWidth="150.0" text="Kode Kereta" />
+            <TableColumn fx:id="kereta" prefWidth="150.0" text="Kereta" />
+            <TableColumn fx:id="kelas" prefWidth="150.0" text="Kelas" />
+            <TableColumn fx:id="stasiun_asal" prefWidth="150.0" text="Stasiun Asal" />
+            <TableColumn fx:id="stasiun_tujuan" prefWidth="150.0" text="Stasiun Tujuan" />
+            <TableColumn fx:id="tgl_pergi" prefWidth="150.0" text="Tanggal Pergi" />
+            <TableColumn fx:id="berangkat" prefWidth="150.0" text="Berangkat" />
+            <TableColumn fx:id="tiba" prefWidth="150.0" text="Tiba" />
+            <TableColumn fx:id="gerbong" prefWidth="150.0" text="Gerbong" />
+            <TableColumn fx:id="kursi" prefWidth="150.0" text="Kursi" />
+            <TableColumn fx:id="status" prefWidth="150.0" text="Status" visible="false" />
+            <TableColumn fx:id="harga" prefWidth="150.0" text="Harga" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

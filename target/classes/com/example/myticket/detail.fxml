@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myticket.detail">
+    <children>
+        <VBox prefHeight="772.0" prefWidth="200.0" style="-fx-background-color: #693d3d;">
+            <children>
+                <Pane prefHeight="150.0" prefWidth="210.0">
+                    <children>
+                        <Text fill="WHITE" layoutX="56.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Ticket.">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                        </Text>
+                    </children></Pane>
+                <JFXButton onAction="#openpesan" prefHeight="25.0" prefWidth="290.0" style="-fx-background-color: transparent; -fx-text-fill: #ffffff;" text="Jual Tiket">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton onAction="#opendetail" prefHeight="25.0" prefWidth="277.0" style="-fx-background-color: transparent; -fx-text-fill: #ffffff;" text="Laporan Penjualan">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton prefHeight="25.0" prefWidth="277.0" style="-fx-background-color: transparent; -fx-text-fill: #ffffff;" text="Detail">
+                    <font>
+                        <Font name="Verdana Bold" size="14.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </JFXButton>
+                <JFXButton onAction="#openlgout" prefHeight="25.0" prefWidth="301.0" style="-fx-background-color: transparent; -fx-text-fill: #ffffff;" text="Keluar">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </VBox>
+      <HBox layoutX="221.0" layoutY="28.0" prefHeight="717.0" prefWidth="1125.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #ffffff;">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <children>
+                  <VBox prefHeight="717.0" prefWidth="350.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Detail Kereta">
+                           <font>
+                              <Font name="Verdana Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox prefHeight="16.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nama Kereta :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jayabaya">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="16.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kelas :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ekonomi">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="16.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stasiun Asal :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Malang Kota Baru">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="16.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Stasiun Tujuan">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Surabaya Gubeng">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="16.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tanggal Pergi :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="01/02/2022">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="16.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pukul :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="16:00">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="16.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Harga :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rp20.000">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane prefHeight="200.0" prefWidth="350.0" style="-fx-background-color: #ffffff;">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <children>
+                  <VBox prefHeight="717.0" prefWidth="350.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data Penumpang">
+                           <font>
+                              <Font name="Verdana Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox prefHeight="19.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nama lengkap :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Al Azhar">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="19.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nomor Telepon :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="0895366608834">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="19.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bio :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tuan">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="19.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tipe Identitas :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="KTP">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="19.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nomor Identitas :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="10284754">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="19.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tanggal Lahir :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="24/08/2003">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="19.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Alamat :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jl. Candi Agung IV No.10">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+            <Pane prefHeight="497.0" prefWidth="350.0" style="-fx-background-color: #f8f9fa;">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <children>
+                  <VBox prefHeight="300.0" prefWidth="350.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data Kursi">
+                           <font>
+                              <Font name="Verdana Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" top="15.0" />
+                           </VBox.margin>
+                        </Text>
+                        <HBox prefHeight="9.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gerbong :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gerbong 1">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="9.0" prefWidth="350.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kursi :">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1A">
+                                 <font>
+                                    <Font name="Verdana" size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="15.0" top="15.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="50.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

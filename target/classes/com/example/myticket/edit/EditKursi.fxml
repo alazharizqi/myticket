@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myticket.edit.EditKursi">
+    <children>
+        <Pane layoutX="34.0" layoutY="38.0" prefHeight="53.0" prefWidth="1318.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <HBox prefHeight="53.0" prefWidth="1318.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="My  Ticket Administration">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" top="15.0" />
+                            </HBox.margin>
+                        </Text>
+                        <JFXButton onAction="#tiket" style="-fx-background-color: transparent;" text="Kereta">
+                            <HBox.margin>
+                                <Insets left="450.0" top="12.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton onAction="#stasiun" style="-fx-background-color: transparent;" text="Stasiun">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" top="12.0" />
+                            </HBox.margin>
+                        </JFXButton>
+                        <JFXButton onAction="#gerbong" style="-fx-background-color: transparent;" text="Gerbong">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" top="12.0" />
+                            </HBox.margin>
+                        </JFXButton>
+                        <JFXButton style="-fx-background-color: transparent;" text="Tambah Gerbong">
+                            <HBox.margin>
+                                <Insets left="15.0" top="12.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton onAction="#kursi" style="-fx-background-color: transparent;" text="Kursi">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="15.0" top="12.0" />
+                            </HBox.margin>
+                        </JFXButton>
+                        <JFXButton onAction="#user" style="-fx-background-color: transparent;" text="User">
+                            <HBox.margin>
+                                <Insets left="15.0" top="12.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton onAction="#keluar" style="-fx-background-color: transparent;" text="Keluar">
+                            <HBox.margin>
+                                <Insets left="15.0" top="12.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </HBox>
+            </children>
+        </Pane>
+        <Pane layoutX="34.0" layoutY="143.0" prefHeight="567.0" prefWidth="1318.0" style="-fx-background-color: #ffffff;">
+            <children>
+                <Pane layoutX="318.0" layoutY="37.0" prefHeight="494.0" prefWidth="683.0" style="-fx-background-color: #ffffff;">
+                    <children>
+                        <VBox prefHeight="494.0" prefWidth="683.0" style="-fx-background-color: #ffffff;">
+                            <children>
+                                <Label text="Kursi">
+                                    <font>
+                                        <Font name="Verdana" size="14.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="30.0" right="30.0" top="175.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <TextField fx:id="kursi" promptText="Kursi" style="-fx-background-color: transparent; -fx-border-radius: 5; -fx-border-color: #693d3d;">
+                                    <font>
+                                        <Font name="Verdana" size="14.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="30.0" right="30.0" top="15.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <HBox prefHeight="99.0" prefWidth="683.0">
+                                    <children>
+                                        <JFXButton onAction="#batal" prefWidth="100.0" style="-fx-background-color: #693d3d; -fx-text-fill: #ffffff; -fx-background-radius: 5;" text="Batal">
+                                            <HBox.margin>
+                                                <Insets left="425.0" top="30.0" />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="Verdana" size="14.0" />
+                                            </font>
+                                        </JFXButton>
+                                        <JFXButton onAction="#submitData" prefWidth="100.0" style="-fx-background-color: #693d3d; -fx-text-fill: #ffffff; -fx-background-radius: 5;" text="Simpan">
+                                            <HBox.margin>
+                                                <Insets left="30.0" right="30.0" top="30.0" />
+                                            </HBox.margin>
+                                            <font>
+                                                <Font name="Verdana" size="14.0" />
+                                            </font>
+                                        </JFXButton>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

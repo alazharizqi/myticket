@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: #f8f9fa;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myticket.JualTiket">
+    <children>
+        <VBox prefHeight="772.0" prefWidth="200.0" style="-fx-background-color: #693d3d;">
+            <children>
+                <Pane prefHeight="150.0" prefWidth="210.0">
+                    <children>
+                        <Text fill="WHITE" layoutX="56.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Ticket.">
+                            <font>
+                                <Font name="Verdana Bold" size="18.0" />
+                            </font>
+                        </Text>
+                    </children></Pane>
+                <JFXButton onAction="#tiket" prefHeight="25.0" prefWidth="290.0" style="-fx-background-color: transparent; -fx-text-fill: #ffffff;" text="Tiket">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </JFXButton>
+            <JFXButton prefHeight="25.0" prefWidth="277.0" style="-fx-background-color: transparent; -fx-text-fill: #ffffff;" text="Jual Tiket">
+               <font>
+                  <Font name="Verdana Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </JFXButton>
+                <JFXButton onAction="#laporanpenjualan" prefHeight="25.0" prefWidth="277.0" style="-fx-background-color: transparent; -fx-text-fill: #ffffff;" text="Laporan Penjualan">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton onAction="#logout" prefHeight="25.0" prefWidth="301.0" style="-fx-background-color: transparent; -fx-text-fill: #ffffff;" text="Keluar">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </VBox>
+      <Pane layoutX="224.0" layoutY="25.0" prefHeight="718.0" prefWidth="1116.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <HBox layoutX="-2.0" layoutY="-1.0" prefHeight="718.0" prefWidth="1116.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <VBox prefHeight="718.0" prefWidth="372.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data Penumpang">
+                           <font>
+                              <Font name="Verdana Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Label text="Nama Lengkap">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="nama_lengkap" promptText="nama_lengkap" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Nomor Telepon">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="nomor_telepon" promptText="Nomor Telepon" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Bio">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ComboBox fx:id="bio" prefHeight="25.0" prefWidth="418.0" promptText="Bio" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                        <Label text="Tipe Identitas">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ComboBox fx:id="tipe_identitas" prefHeight="25.0" prefWidth="418.0" promptText="Tipe Identitas" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                        <Label text="Nomor Identitas">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="nomor_identitas" promptText="Nomor Identitas" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Tanggal Lahir">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <DatePicker fx:id="tgl_lahir" prefHeight="25.0" prefWidth="401.0" promptText="Tanggal Lahir" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </DatePicker>
+                        <Label text="Alamat">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextArea fx:id="alamat" prefHeight="60.0" prefWidth="332.0" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextArea>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="718.0" prefWidth="372.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data Kereta">
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Verdana Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <Label text="Kode Kereta">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="30.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ComboBox fx:id="id_kereta" onAction="#setKode_Kereta" prefHeight="25.0" prefWidth="418.0" promptText="Kode Kereta" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                        <Label text="Kereta">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="kereta" editable="false" promptText="Kereta" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Kelas">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="kelas" editable="false" promptText="Kelas" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Stasiun Asal">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="stasiun_asal" editable="false" promptText="Stasiun Asal" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Stasiun Tujuan">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="stasiun_tujuan" editable="false" promptText="Stasiun Tujuan" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Berangkat">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="berangkat" editable="false" promptText="Berangkat (00:00)" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Tiba">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="tiba" editable="false" promptText="Tiba (00:00)" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="718.0" prefWidth="372.0">
+                     <children>
+                        <Label text="Tanggal Pergi">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="75.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="tgl_pergi" editable="false" prefHeight="30.0" prefWidth="665.0" promptText="Tanggal Pergi" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Gerbong">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="gerbong" editable="false" prefHeight="30.0" prefWidth="665.0" promptText="Gerbong" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Kursi">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="kursi" editable="false" prefHeight="30.0" prefWidth="665.0" promptText="Kursi" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Harga">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="harga" editable="false" prefHeight="30.0" prefWidth="665.0" promptText="Harga" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <Label text="Status">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextField fx:id="status" editable="false" prefHeight="30.0" prefWidth="665.0" promptText="Status" style="-fx-background-color: transparent; -fx-border-color: #693d3d; -fx-border-radius: 5;">
+                           <font>
+                              <Font name="Verdana" size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </TextField>
+                        <JFXButton onAction="#submitData" prefHeight="30.0" prefWidth="332.0" style="-fx-background-color: #693d3d; -fx-text-fill: #ffffff;" text="Jual Tiket">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="60.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>

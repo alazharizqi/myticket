@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: f0000;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.myticket.HelloController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1474.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/blob-scene-haikei.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="495.0" fitWidth="600.0" layoutX="115.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fococlipping-20220120-21324.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="858.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="My Ticket">
+         <font>
+            <Font name="Verdana" size="64.0" />
+         </font>
+      </Text>
+      <Text layoutX="858.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pesan tiket anda sekarang di my ticket !">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </Text>
+      <JFXButton id="log" layoutX="858.0" layoutY="403.0" onAction="#openLink" prefHeight="22.0" prefWidth="366.0" ripplerFill="#fffefe" style="-fx-background-color: #693d3d; -fx-background-radius: 5; -fx-text-fill: #ffffff;" text="Masuk">
+         <font>
+            <Font name="Verdana" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
